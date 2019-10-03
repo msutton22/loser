@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class playerBehavior : MonoBehaviour
 {
+    public float speed;
+
+    public bool isJumping;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,25 +15,33 @@ public class playerBehavior : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        //if (Input.GetKey(KeyCode.UpArrow))
-       // {
-       //     this.GetComponent<Transform>().Translate(new Vector3(0, 0.2f));
-       // }
-
-       // if (Input.GetKey(KeyCode.DownArrow))
-       // {
-       //     this.GetComponent<Transform>().Translate(new Vector3(0, -0.2f));
-       // }
-
+    {   
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            this.GetComponent<Transform>().Translate(new Vector3(0.2f, 0));
+            this.GetComponent<Transform>().Translate(new Vector3(speed, 0));
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            this.GetComponent<Transform>().Translate(new Vector3(-0.2f, 0));
+            this.GetComponent<Transform>().Translate(new Vector3(-speed, 0));
         } 
+        if (!isJumping && Input.GetKeyDown(KeyCode.Space))
+        {
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(0,7f), ForceMode2D.Impulse);
+            isJumping = true;
+
+        } 
+    }
+    
+    void OnCollisionEnter2D (Collision2D col)
+    {
+        if (col.gameObject.tag.Equals("floor"))
+        {
+            isJumping = false;
+        }
+        else
+        {
+            isJumping = true;
+        }
     }
 }
