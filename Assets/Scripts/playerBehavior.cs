@@ -9,6 +9,8 @@ public class playerBehavior : MonoBehaviour
     public bool isJumping;
     public bool newRoom;
 
+    public GameObject startText;
+
     private KeyCode right;
     private KeyCode left;
     private KeyCode jump;
@@ -18,11 +20,16 @@ public class playerBehavior : MonoBehaviour
         right = KeyCode.RightArrow;
         left = KeyCode.LeftArrow;
         jump = KeyCode.Space;
+        startText.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
-    {   
+    {
+        if (Input.anyKey)
+        {
+            startText.SetActive(false);
+        }
         if (Input.GetKey(right))
         {
             this.GetComponent<Transform>().Translate(new Vector3(speed, 0));
