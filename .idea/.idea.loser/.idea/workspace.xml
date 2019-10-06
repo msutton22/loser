@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00063c4a-8022-481e-8f7f-a57b6fbe87f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playerBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.loser/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.loser/.idea/contentModel.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,35 +20,61 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="550" />
+          <entry key="cs" value="641" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="550" />
+          <entry key="C#" value="641" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerBehavior.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state relative-caret-position="31">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
-                <marker date="1570133638576" expanded="false" signature="6:78" ph="..." />
-                <marker date="1570133638576" expanded="true" signature="123:1452" ph="{...}" />
-                <marker date="1570133638576" expanded="true" signature="386:534" ph="{...}" />
-                <marker date="1570133638576" expanded="true" signature="592:1193" ph="{...}" />
-                <marker date="1570133638576" expanded="true" signature="634:731" ph="{...}" />
-                <marker date="1570133638576" expanded="true" signature="764:862" ph="{...}" />
-                <marker date="1570133638576" expanded="true" signature="913:1054" ph="{...}" />
-                <marker date="1570133638576" expanded="true" signature="1076:1187" ph="{...}" />
-                <marker date="1570133638576" expanded="true" signature="1244:1450" ph="{...}" />
-                <marker date="1570133638576" expanded="true" signature="1298:1349" ph="{...}" />
-                <marker date="1570133638576" expanded="true" signature="1396:1444" ph="{...}" />
+                <marker date="1570133732019" expanded="false" signature="6:78" ph="..." />
+                <marker date="1570133732019" expanded="true" signature="123:1534" ph="{...}" />
+                <marker date="1570133732019" expanded="true" signature="386:533" ph="{...}" />
+                <marker date="1570133732019" expanded="true" signature="591:1275" ph="{...}" />
+                <marker date="1570133732019" expanded="true" signature="623:683" ph="{...}" />
+                <marker date="1570133732019" expanded="true" signature="716:813" ph="{...}" />
+                <marker date="1570133732019" expanded="true" signature="846:944" ph="{...}" />
+                <marker date="1570133732019" expanded="true" signature="995:1136" ph="{...}" />
+                <marker date="1570133732019" expanded="true" signature="1158:1269" ph="{...}" />
+                <marker date="1570133732019" expanded="true" signature="1326:1532" ph="{...}" />
+                <marker date="1570133732019" expanded="true" signature="1380:1431" ph="{...}" />
+                <marker date="1570133732019" expanded="true" signature="1478:1526" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/cameraBehavior.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+              <folding>
+                <marker date="1570387689671" expanded="false" signature="6:78" ph="..." />
+                <marker date="1570387689671" expanded="true" signature="123:898" ph="{...}" />
+                <marker date="1570387689671" expanded="true" signature="401:610" ph="{...}" />
+                <marker date="1570387689671" expanded="true" signature="687:896" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -60,12 +86,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/cameraBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/playerBehavior.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/playerBehavior.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/cameraBehavior.cs" />
       </list>
     </option>
   </component>
@@ -76,10 +104,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="74" />
-    <option name="y" value="84" />
+    <option name="x" value="51" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="718" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -138,12 +166,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570128628722</updated>
-      <workItem from="1570128634327" duration="3682000" />
+      <workItem from="1570128634327" duration="6205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3682000" />
+    <option name="totallyTimeSpent" value="6205000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -155,11 +183,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="74" y="84" width="1440" height="718" extended-state="0" />
+    <frame x="51" y="23" width="1440" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -204,20 +232,34 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/playerBehavior.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state relative-caret-position="31">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <marker date="1570133638576" expanded="false" signature="6:78" ph="..." />
-            <marker date="1570133638576" expanded="true" signature="123:1452" ph="{...}" />
-            <marker date="1570133638576" expanded="true" signature="386:534" ph="{...}" />
-            <marker date="1570133638576" expanded="true" signature="592:1193" ph="{...}" />
-            <marker date="1570133638576" expanded="true" signature="634:731" ph="{...}" />
-            <marker date="1570133638576" expanded="true" signature="764:862" ph="{...}" />
-            <marker date="1570133638576" expanded="true" signature="913:1054" ph="{...}" />
-            <marker date="1570133638576" expanded="true" signature="1076:1187" ph="{...}" />
-            <marker date="1570133638576" expanded="true" signature="1244:1450" ph="{...}" />
-            <marker date="1570133638576" expanded="true" signature="1298:1349" ph="{...}" />
-            <marker date="1570133638576" expanded="true" signature="1396:1444" ph="{...}" />
+            <marker date="1570133732019" expanded="false" signature="6:78" ph="..." />
+            <marker date="1570133732019" expanded="true" signature="123:1534" ph="{...}" />
+            <marker date="1570133732019" expanded="true" signature="386:533" ph="{...}" />
+            <marker date="1570133732019" expanded="true" signature="591:1275" ph="{...}" />
+            <marker date="1570133732019" expanded="true" signature="623:683" ph="{...}" />
+            <marker date="1570133732019" expanded="true" signature="716:813" ph="{...}" />
+            <marker date="1570133732019" expanded="true" signature="846:944" ph="{...}" />
+            <marker date="1570133732019" expanded="true" signature="995:1136" ph="{...}" />
+            <marker date="1570133732019" expanded="true" signature="1158:1269" ph="{...}" />
+            <marker date="1570133732019" expanded="true" signature="1326:1532" ph="{...}" />
+            <marker date="1570133732019" expanded="true" signature="1380:1431" ph="{...}" />
+            <marker date="1570133732019" expanded="true" signature="1478:1526" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/cameraBehavior.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <marker date="1570387689671" expanded="false" signature="6:78" ph="..." />
+            <marker date="1570387689671" expanded="true" signature="123:898" ph="{...}" />
+            <marker date="1570387689671" expanded="true" signature="401:610" ph="{...}" />
+            <marker date="1570387689671" expanded="true" signature="687:896" ph="{...}" />
           </folding>
         </state>
       </provider>
