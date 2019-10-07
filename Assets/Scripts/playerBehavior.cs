@@ -21,12 +21,15 @@ public class playerBehavior : MonoBehaviour
     public GameObject timerText;
 
     public GameObject timerIcon;
+    public GameObject timerIcon2;
     
     public ParticleSystem particles;
+    public ParticleSystem particles2;
 
     private KeyCode right;
     private KeyCode left;
     private KeyCode jump;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -88,7 +91,7 @@ public class playerBehavior : MonoBehaviour
         {
             right = KeyCode.H;
             left = KeyCode.G;
-            jump = KeyCode.LeftShift;
+            jump = KeyCode.Y;
         }
     }
     
@@ -128,7 +131,7 @@ public class playerBehavior : MonoBehaviour
             newRoom3 = false;
         }
         
-        if (col.gameObject.tag.Equals("wall2"))
+        if (col.gameObject.tag.Equals("trigger3"))
         {
             ogRoom = false;
             newRoom = false;
@@ -145,6 +148,12 @@ public class playerBehavior : MonoBehaviour
             timer += 20f;
             particles.Play();
             timerIcon.SetActive(false);
+        }
+        if (col.gameObject.tag.Equals("timer3"))
+        {
+            timer += 20f;
+            particles2.Play();
+            timerIcon2.SetActive(false);
         }
     }
 }

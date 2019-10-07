@@ -5,7 +5,6 @@ using UnityEngine;
 public class bugBehavior : MonoBehaviour
 {
     public float speed;
-
     public bool collide;
     // Start is called before the first frame update
     void Start()
@@ -16,7 +15,7 @@ public class bugBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<Transform> ().Translate (new Vector3 (0, speed));
+        this.GetComponent<Transform> ().Translate (new Vector3 (-speed, 0));
     }
     
     void OnCollisionEnter2D(Collision2D collision) //when you collide with enemy
@@ -25,7 +24,7 @@ public class bugBehavior : MonoBehaviour
         {
             collide = true;
             speed = -speed;
-            transform.localScale = new Vector2(transform.localScale.x, -transform.localScale.y);
+            transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
         }
     }
 }
