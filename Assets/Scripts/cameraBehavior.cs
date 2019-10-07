@@ -11,7 +11,6 @@ public class cameraBehavior : MonoBehaviour
     void Start () 
     {
         offset = new Vector3(3f, 2.5f, -10.1f);
-        Debug.Log(offset);
     }
 
     // LateUpdate is called after Update each frame

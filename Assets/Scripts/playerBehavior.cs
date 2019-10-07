@@ -11,6 +11,7 @@ public class playerBehavior : MonoBehaviour
 
     public bool isJumping;
     public bool newRoom;
+    public bool newRoom2;
     public bool ogRoom;
 
     public GameObject startText;
@@ -37,7 +38,7 @@ public class playerBehavior : MonoBehaviour
         timerText.gameObject.GetComponent<Text>().text = ("Time Left: " + (int)timer);
         if (timer <= 0)
         {
-            SceneManager.LoadScene (3);
+            SceneManager.LoadScene (1);
         }
 
         if (Input.anyKey)
@@ -72,6 +73,12 @@ public class playerBehavior : MonoBehaviour
             left = KeyCode.LeftArrow;
             jump = KeyCode.Space;
         }
+        else if (newRoom2)
+        {
+            right = KeyCode.L;
+            left = KeyCode.J;
+            jump = KeyCode.I;
+        }
     }
     
     void OnCollisionEnter2D (Collision2D col)
@@ -84,8 +91,13 @@ public class playerBehavior : MonoBehaviour
         {
             newRoom = true;
             ogRoom = false;
+            newRoom2 = false;
         }
         if (col.gameObject.tag.Equals("spike"))
+        {
+            transform.position = new Vector3(-5f,-2f,0);
+        }
+        if (col.gameObject.tag.Equals("bug"))
         {
             transform.position = new Vector3(-5f,-2f,0);
         }
@@ -93,6 +105,18 @@ public class playerBehavior : MonoBehaviour
         {
             ogRoom = true;
             newRoom = false;
+            newRoom2 = false;
+        }
+        if (col.gameObject.tag.Equals("trigger2"))
+        {
+            ogRoom = false;
+            newRoom = false;
+            newRoom2 = true;
+        }
+        
+        if (col.gameObject.tag.Equals("door"))
+        {
+            SceneManager.LoadScene (2);
         }
     }
 }

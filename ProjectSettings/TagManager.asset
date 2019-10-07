@@ -8,6 +8,11 @@ TagManager:
   - wall
   - trigger1
   - spike
+  - trigger
+  - trigger2
+  - wall2
+  - bug
+  - door
   layers:
   - Default
   - TransparentFX
