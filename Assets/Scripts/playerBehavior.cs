@@ -12,12 +12,17 @@ public class playerBehavior : MonoBehaviour
     public bool isJumping;
     public bool newRoom;
     public bool newRoom2;
+    public bool newRoom3;
     public bool ogRoom;
 
     public GameObject startText;
 
     public float timer = 60f;
     public GameObject timerText;
+
+    public GameObject timerIcon;
+    
+    public ParticleSystem particles;
 
     private KeyCode right;
     private KeyCode left;
@@ -79,6 +84,12 @@ public class playerBehavior : MonoBehaviour
             left = KeyCode.J;
             jump = KeyCode.I;
         }
+        else if (newRoom3)
+        {
+            right = KeyCode.H;
+            left = KeyCode.G;
+            jump = KeyCode.LeftShift;
+        }
     }
     
     void OnCollisionEnter2D (Collision2D col)
@@ -92,6 +103,7 @@ public class playerBehavior : MonoBehaviour
             newRoom = true;
             ogRoom = false;
             newRoom2 = false;
+            newRoom3 = false;
         }
         if (col.gameObject.tag.Equals("spike"))
         {
@@ -106,17 +118,33 @@ public class playerBehavior : MonoBehaviour
             ogRoom = true;
             newRoom = false;
             newRoom2 = false;
+            newRoom3 = false;
         }
         if (col.gameObject.tag.Equals("trigger2"))
         {
             ogRoom = false;
             newRoom = false;
             newRoom2 = true;
+            newRoom3 = false;
+        }
+        
+        if (col.gameObject.tag.Equals("wall2"))
+        {
+            ogRoom = false;
+            newRoom = false;
+            newRoom2 = false;
+            newRoom3 = true;
         }
         
         if (col.gameObject.tag.Equals("door"))
         {
             SceneManager.LoadScene (2);
+        }
+        if (col.gameObject.tag.Equals("timer"))
+        {
+            timer += 20f;
+            particles.Play();
+            timerIcon.SetActive(false);
         }
     }
 }
